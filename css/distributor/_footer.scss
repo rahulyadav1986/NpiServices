@@ -1,0 +1,138 @@
+footer{
+    width: 100%;
+    .top{        
+        width: 100%; background-color: #78b73c; height: 13.2rem; 
+        h3{
+            color: #fff; font-size: 3.3rem; font-weight: 800; margin: 0; position: relative;
+            &:after{
+                background-image: url(../images/c_ar.png); width: 2.6rem; height: 9.6rem; background-size: contain; position: absolute; top: 0; bottom: 0; right: -6.6rem; margin: auto; content: "";
+            }
+        }
+        p{
+            color: #fff; font-size: 2.7rem;
+        }
+    }
+    .bottom{
+        width: 100%; background-color: #f7f7f7;
+        
+        .logo{
+            margin-bottom: 2rem;  display:block;
+            img{
+                display:block; height: 8.3rem;
+            }
+        }
+        p{
+            font-size: 1.5rem; font-weight: 500;
+        }
+        h3{
+            color: #000000; font-size: 2.2rem; text-transform: capitalize; font-weight: normal; padding-bottom: 2.2rem; margin-bottom: 2.2rem; border-bottom: #e6e6e6 1px solid;       
+
+        }
+        ul{
+            &.ft_menu{
+                li{
+                    margin-bottom: 1rem;
+                    a{
+                        font-size: 1.5rem; text-transform: capitalize;
+                    }
+                }
+                &.contacts{
+                   li{
+                        padding-left: 3.5rem; display: block; position: relative;
+                        img{
+                            position: absolute; top: 0; bottom: 0; left: 0; margin: auto;
+                        }
+                        &:first-child{
+                           img{
+                                bottom: auto;
+                                top: 9px;
+                           }
+                        }
+                   }
+                }
+            }
+        }
+    }
+    .copyright{ 
+        width: 100%; padding: 2rem 0; border-top: #e6e6e6 1px solid; color: #000; font-size: 1.5rem; text-align: center;
+        a{
+            color: #78b73c; text-decoration: underline; transition: all .3s ease-in;
+            &:hover{
+                color: #000;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1599px){
+    footer {
+        .top{
+           h3{
+               font-size: 2.8rem;
+           }
+           p{
+               font-size: 2.4rem;
+           }
+        }
+    }
+}
+
+@media only screen and (max-width:1365px){
+    footer {
+        .top{
+           h3{
+               font-size: 2.2rem;
+           }
+           p{
+               font-size: 2rem;
+           }
+        }
+    }
+}
+
+@media only screen and (max-width:1023px){
+    footer {
+        .top{
+            text-align: center; padding: 2rem 0; height: auto;
+            .container{
+                flex-wrap: wrap;
+            }
+           h3{
+               font-size: 2.2rem; flex: 0 0 100%; width: 100%; padding-bottom: 5.2rem;
+               &::after{ 
+                background-image: url(../images/mobile_c_ar.png);  width: 9.6rem; height: 2.6rem; left: 0; right: 0; bottom: 9px; top: auto; margin: auto;
+               }
+           }
+           p{
+               font-size: 2rem; flex: 0 0 100%;  width: 100%;
+           }
+        }
+        
+        
+    }
+}
+@media only screen and (max-width:767px){
+    footer {
+        .bottom{
+            .port{
+                margin-bottom: 3rem;
+            }
+            ul{
+                &.ft_menu{
+                    &.contacts{
+                        li{
+                            padding-left: 5.5rem;
+                            &:first-child{
+                                img{
+                                    bottom: 0; top: 0;
+                                }
+                            }
+                            margin-bottom: 2rem;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}

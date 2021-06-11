@@ -1,0 +1,143 @@
+.default{
+    width: 100%; background-color: #f0f0f0;
+    h1{
+        font-size: 2.8rem; font-weight: normal; text-transform: uppercase; margin-bottom: 4rem;
+    }
+    .list{
+        margin-top: 3rem; margin-bottom: 1rem;
+    }
+    a{
+        color: #78b73c; font-size: 1.8rem; text-decoration: underline; transition: all .3s ease-in;
+        &:hover{
+            color: #000
+        }
+    }
+}
+
+article{
+    width: 100%; background-color: #fff; border-top: #73af36 5px solid; margin-bottom: 5rem;
+    &.ar_list{
+        li{
+            img{
+                margin-top: 1rem;
+            }
+        }
+    }
+    .head{
+        width: 100%; padding: 4.8rem 0 1.8rem 3.5rem;
+        h2{
+            font-weight: 600; font-size: 2.8rem; padding-left:4.4rem; position: relative;
+            &:before{
+                width: 16px; height: 4px; background-color: #73af36; position: absolute; top: 0; bottom: 0; left: 0; margin: auto; content: ""; border-radius: 10px;
+            }
+            &:after{
+                width: 6px; height: 4px; background-color: #73af36; position: absolute; top: 0; bottom: 0; left: 19px; margin: auto; content: ""; border-radius: 10px;
+            }
+        }
+    }
+    .article_list{
+        width: 100%; 
+        li{
+            width: 100%; border-bottom: #dbdbdb 1px solid; padding: 2.2rem 3.5rem 2.2rem 3.5rem;
+            img{
+                margin-right: 2rem;
+            }
+            h3{
+               font-size: 1.7rem; font-weight: 500; margin-bottom: 2rem;
+            }
+            h4{
+                font-size: 1.3rem; color: #757575; font-weight: normal;
+            }
+        }
+    }
+}
+
+.contact_details{
+    width: 100%;
+    .map{
+        width: 100%; height: 40rem; border: none; margin-bottom: 3rem;
+    }
+    .details{
+        width: 100%; background-color: #fff;  border-top: #73af36 5px solid; margin-bottom: 3rem; padding: 3.5rem;
+        ul{
+            &.ft_menu{
+                li{
+                    margin-bottom: 1rem;
+                    a{
+                        font-size: 1.5rem; text-transform: capitalize;
+                    }
+                }
+                &.contacts{
+                   li{
+                        padding-left: 3.5rem; display: block; position: relative;
+                        img{
+                            position: absolute; top: 0; bottom: 0; left: 0; margin: auto;
+                        }
+                        &:first-child{
+                           img{
+                                bottom: auto;
+                                top: 9px;
+                           }
+                        }
+                   }
+                }
+            }
+        }
+    }
+    
+}
+
+.form_back{
+    width: 100%; margin-bottom: 3rem;
+    .portion{
+        width: 100%; margin-bottom: 1rem;
+        label{
+            font-weight: 700; color: #000;
+        }
+        .text{
+            width: 100%; height: 4.5rem; background-color: #F7F7F7; border: rgba(0,0,0,.2) 1px solid; outline-style: none; padding: 0 2rem;
+        }
+        .textarea{
+            width: 100%; height: 20rem; background-color: #F7F7F7; border: rgba(0,0,0,.2) 1px solid; outline-style: none; padding: 2rem; resize: none;
+        }
+        
+    }
+    .submit{
+        font-size: 1.4rem; text-transform: uppercase; background-color: #78b73c; color: #fff; padding: 8.5px 2.5rem; border-radius: 5px; font-weight: 700; outline-style: none; border: none; cursor: pointer; margin-top: 5px;
+    }
+}
+
+@media only screen and (max-width:1023px){
+    article{
+        margin: 3rem 0 0 0;
+    }
+    .contact_details {
+        .details {
+            ul{
+                &.ft_menu{
+                    &.contacts{
+                        li{
+                            padding-left: 5.5rem;
+                            &:first-child{
+                                img{
+                                    bottom: 0; top: 0;
+                                }
+                            }
+                            margin-bottom: 2rem;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+    
+}
+
+@media only screen and (max-width:500px){
+    .default {
+        h1{
+            font-size: 1.5rem;
+        }
+    }
+}

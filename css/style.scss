@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap');
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url("owl.carousel.min.css");
+@import url("jquery.fancybox.min.css");
+
+/*common*/
+@import "distributor/common";
+/*common*/
+
+/*header*/
+@import "distributor/header";
+/*header*/
+
+/*hero*/
+@import "distributor/banner";
+/*hero*/
+
+/*about*/
+@import "distributor/about";
+/*about*/
+
+/*industries*/
+@import "distributor/industries";
+/*industries*/
+
+/*default*/
+@import "distributor/others";
+/*default*/
+
+
+/*platfrom*/
+@import "distributor/platfrom";
+/*platfrom*/
+
+
+
+
+/*footer*/
+@import "distributor/footer";
+/*footer*/
+
